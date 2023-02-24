@@ -7,6 +7,10 @@ describe('XPathLocators', () => {
 
         cy.xpath("//a[@href='/products']").click()
 
+        cy.get("#search_product").type("polo")
+
+        cy.get(".fa-search").click()
+
         
     });
 });
